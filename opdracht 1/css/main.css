@@ -5,9 +5,13 @@
  */
 
 @font-face {
-  font-family: Ampersand;
-	src: local('Baskerville-Italic'), local('GoudyOldStyleT-Italic'), local('Garamond-Italic'), local('Palatino-Italic');
-	unicode-range: U+26;
+  font-family:Ampersand;
+  src:local('Baskerville'),
+  local('Goudy Old Style'),
+  local('Palatino'),
+  local('Book Antiqua');
+  unicode-range:U+26;
+  font-style: italic;
 }
 
 * {
@@ -56,6 +60,7 @@ img {
 }
 
 .main-header > h1 {
+  font-family: Ampersand, sans-serif;
   color: white;
   font-size: 1.5em;
   width: 100%;
