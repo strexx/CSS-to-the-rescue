@@ -1,4 +1,13 @@
-## CSS-to-the-rescue
-CSS to the rescue for minor
+# CSS-to-the-rescue
 
-Link naar webpagina: <a href="http://fons.alleenmedia.nl/css-to-the-rescue/">CSS to the rescue - Fons Hettema</a>
+## Week 1
+
+#### Opdracht
+* [Link naar opdracht](https://strexx.github.io/CSS-to-the-rescue/opdracht%201/index.html)
+
+
+## Week 2
+
+#### Opdracht
+-----------------------------------------
+* [Link naar opdracht](https://strexx.github.io/CSS-to-the-rescue/week%202/opdracht1.1/index.html)
