@@ -9,5 +9,4 @@
 ## Week 2
 
 #### Opdracht
------------------------------------------
 * [Link naar opdracht](https://strexx.github.io/CSS-to-the-rescue/week%202/opdracht1.1/index.html)
