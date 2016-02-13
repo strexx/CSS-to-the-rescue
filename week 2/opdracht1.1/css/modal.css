@@ -3,15 +3,31 @@
 /* Add top animation (Chrome, Safari, Opera) */
 
 @-webkit-keyframes animatetop {
-    from {top:-6.25em;opacity: 0;filter:alpha(opacity=0);}
-    to {top:0em;opacity:1;filter:alpha(opacity=100);}
+    from {
+      top: -6.25em;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    to {
+      top: 0em;
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
 }
 
 /* Add top animation (Standard syntax) */
 
 @keyframes animatetop {
-    from {top:-6.25em;opacity: 0;filter:alpha(opacity=0);}
-    to {top:0em;opacity:1;filter:alpha(opacity=100);}
+    from {
+      top: -6.25em;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    to {
+      top: 0em;
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
 }
 
 .lightbox {
