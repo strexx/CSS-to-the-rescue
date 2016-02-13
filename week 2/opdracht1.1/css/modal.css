@@ -3,15 +3,31 @@
 /* Add top animation (Chrome, Safari, Opera) */
 
 @-webkit-keyframes animatetop {
-    from {top:-6.25em;opacity: 0;filter:alpha(opacity=0);}
-    to {top:0em;opacity:1;filter:alpha(opacity=100);}
+    from {
+      top: -6.25em;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    to {
+      top: 0em;
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
 }
 
 /* Add top animation (Standard syntax) */
 
 @keyframes animatetop {
-    from {top:-6.25em;opacity: 0;filter:alpha(opacity=0);}
-    to {top:0em;opacity:1;filter:alpha(opacity=100);}
+    from {
+      top: -6.25em;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    to {
+      top: 0em;
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
 }
 
 .lightbox {
@@ -35,7 +51,7 @@
  * Vertical centering - absolute positioning method
  */
  
-.modal {
+[role=overlay].modal {
   display: none;
   position: fixed;
   top: 50%;
@@ -80,7 +96,7 @@
 
 /* The button used to close the modal */
 
-.closebtn {
+[role=button].closeBtn {
   z-index: 10;
   text-decoration: none;
   font-size: 4em;
@@ -91,8 +107,8 @@
   top: 0.9em;
 }
 
-.closebtn:hover,
-.closebtn:focus {
+[role=button].closeBtn:hover,
+[role=button].closeBtn:focus {
   color: #ccc;
   text-decoration: none;
   cursor: pointer;
