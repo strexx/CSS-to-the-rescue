@@ -51,7 +51,7 @@
  * Vertical centering - absolute positioning method
  */
  
-.modal {
+[role=overlay].modal {
   display: none;
   position: fixed;
   top: 50%;
@@ -96,7 +96,7 @@
 
 /* The button used to close the modal */
 
-.closebtn {
+[role=button].closeBtn {
   z-index: 10;
   text-decoration: none;
   font-size: 4em;
@@ -107,8 +107,8 @@
   top: 0.9em;
 }
 
-.closebtn:hover,
-.closebtn:focus {
+[role=button].closeBtn:hover,
+[role=button].closeBtn:focus {
   color: #ccc;
   text-decoration: none;
   cursor: pointer;

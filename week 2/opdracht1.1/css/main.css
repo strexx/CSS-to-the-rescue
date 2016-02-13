@@ -196,7 +196,10 @@ textarea:focus {
     outline: 0;
     border-color: #4697e4;
 }
-.btn-submit {
+
+/* ACCESSIBILITY */
+
+[role=button].submitBtn {
     padding: 1em;
     border: none;
     background: #00E9A3;
@@ -204,7 +207,7 @@ textarea:focus {
     border-radius: 6px;
     cursor: pointer;
 }
-.btn-submit:hover {
+[role=button].submitBtn:hover {
     background-color: hsl(100, 52%, 42%);
     cursor: pointer;
 }
