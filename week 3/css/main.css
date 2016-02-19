@@ -41,6 +41,7 @@ body {
     background-image: repeating-linear-gradient(90deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1) 15px, transparent 0, transparent 30px);*/
     height: 100vh;
     background: hsl(20, 40%, 90%);
+    background-image: -webkit-linear-gradient(0deg, #fb3 11px, transparent 0);
     background-image: linear-gradient(90deg, #fb3 11px, transparent 0);
     background-size: 41px 100%, 61px 100%, 83px 100%;
 }
@@ -241,9 +242,6 @@ input[type=password] {
     padding: 1.5em;
     margin: 0 0 1em 0;
     -webkit-transition: width 0.8s ease;
-    -moz-transition: width 0.8s ease;
-    -o-transition: width 0.8s ease;
-    -ms-transition: width 0.8s ease;
     transition: width 0.8s ease;
     display: block;
 }
@@ -270,7 +268,7 @@ input[type="checkbox"] + label {
     cursor: pointer;
 }
 
-input[type="checkbox"] + label::before {
+input[type="checkbox"] + label:before {
     content: '\a0';
     display: inline-block;
     vertical-align: .2em;
@@ -283,12 +281,12 @@ input[type="checkbox"] + label::before {
     line-height: .65;
 }
 
-input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:checked + label:before {
     content: '\2713';
     background: lightblue;
 }
 
-input[type="checkbox"]:focus + label::before {
+input[type="checkbox"]:focus + label:before {
     box-shadow: 0 0 .1em .1em #58a;
 }
 
@@ -377,7 +375,12 @@ input[type="checkbox"]:focus + label::before {
     display: flex;
     padding: 0;
     margin: 0;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -393,16 +396,18 @@ input[type="checkbox"]:focus + label::before {
 }
 
 #find-friends img:hover {
-    -webkit-box-shadow: 0px 0px 15px 15px #fff;
     box-shadow: 0px 0px 15px 15px #fff;
     border-radius: 50%;
     opacity: 0.6;
+    filter: alpha(opacity=60);
     -webkit-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
     transform: rotate(720deg);
 }
 
 #find-friends img {
     opacity: 1;
+    filter: alpha(opacity=100);
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     margin-bottom: 0.8em;
@@ -425,6 +430,8 @@ input[type="checkbox"]:focus + label::before {
 .loader {
     width: 6.25em;
     height: 6.25em;
+    -webkit-transform: scale(0.4);
+    -ms-transform: scale(0.4);
     transform: scale(0.4);
     margin: 0 auto;
     text-indent: 9999px;
@@ -470,23 +477,6 @@ input[type="checkbox"]:focus + label::before {
     right: -10px;
     bottom: -10px;
     left: -10px;
-}
-
-
-/**
- * Intrinsic sizing
- */
-
-#intrinsic-sizing figure {
-    max-width: 9.375em;
-    max-width: -webkit-min-content;
-    max-width: -moz-min-content;
-    max-width: min-content;
-    margin: auto;
-}
-
-#intrinsic-sizing figure > img {
-    max-width: inherit;
 }
 
 
@@ -642,6 +632,10 @@ main {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
@@ -745,10 +739,33 @@ footer {
 
 
 /**
+ * Intrinsic sizing
+ */
+
+#intrinsic-sizing figure {
+    max-width: 9.375em;
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    margin: auto;
+}
+
+#intrinsic-sizing figure > img {
+    max-width: 20em;
+}
+
+
+/**
  * Media queries
  */
 
 @media (min-width: 43.750em) {
+    #intrinsic-sizing figure > img {
+        max-width: inherit;
+    }
+    .no-drop {
+        display: block !important;
+    }
     main {
         width: 90%;
         margin: 0 auto;
