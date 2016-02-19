@@ -1,0 +1,21 @@
+{
+  "name": "css-to-the-rescue",
+  "version": "0.0.1",
+  "description": "Jaja",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strexx/CSS to the rescue"
+  },
+  "author": "Fons",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "hammerjs": "^2.0.6",
+    "mustache": "^2.2.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "babel-preset-es2015": "^6.5.0",
+    "gulp-babel": "^6.1.2"
+  }
+}
